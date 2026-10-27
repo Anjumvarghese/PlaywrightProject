@@ -12,7 +12,7 @@ class Checkout{
     }
     async purchaseProduct(name,country,city,creditcard,month,year){
         await this.placeOrderBtn.click()
-        await this.page.locator('#name').waitFor({state:'visible'});
+        await this.page.locator('#orderModal').waitFor({state:'visible'});
         await this.name.fill(name);
         await this.country.fill(country);
         await this.city.fill(city);
