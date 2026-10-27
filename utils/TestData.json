@@ -1,0 +1,42 @@
+{
+    "signup":[
+        {
+            "username": "NewUser101",
+            "password": "Test@123",
+            "expectedMessage": "Sign up successful."
+        },
+        {
+            "username": "NewUser101",
+            "password": "Test@123",
+            "expectedMessage": "This user already exist."
+        }
+    ],
+
+    "validUser": {
+        "username": "NewUser101",
+        "password": "Test@123"
+    },
+
+    "invalidUser": {
+        "username": "NewUser11",
+        "password": "Test@123"
+    },
+
+    "invalidPassword": {
+        "username": "NewUser101",
+        "password": "Test@43"
+    },
+
+    "invalidBoth": {
+        "username": "NewUser11",
+        "password": "Test@43"
+    },
+
+    "name":"Anju",
+    "country":"India",
+    "city":"Bangalore",
+    "creditcard":"Fed",
+    "month":"09",
+    "year":"2027"
+    
+}
