@@ -21,11 +21,13 @@ class Product{
         return message;
     }
     async addPhone(){
+        await this.page.locator('#logInModal').waitFor({ state: 'hidden' });
         await this.phoneLink.click();
         await this.phone.waitFor({state:'visible'});
         await this.phone.click()
     }
     async addMonitor(){
+        await this.page.locator('#logInModal').waitFor({ state: 'hidden' });
         await this.monitorLink.click();
         await this.monitor.waitFor({state:'visible'});
         await this.monitor.click()
